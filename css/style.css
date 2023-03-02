@@ -108,7 +108,7 @@ hr {
     width: 200px;
 }
 
-@media screen and (max-width: 842px) {
+@media screen and (max-width: 970px) {
     main {
         max-width: 842px;
         margin: 0 auto;
