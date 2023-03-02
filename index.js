@@ -5,7 +5,7 @@ let idTarefa = 0;
 
 botao.addEventListener('click', (event) => {
     console.log(event)
-    if (tarefa.value != ""){
+    if (tarefa.value != "") {
         idTarefa++
         let listaItem = document.createElement("li");
         listaItem.id = idTarefa;
@@ -18,6 +18,21 @@ botao.addEventListener('click', (event) => {
 
     tarefa.value = ""
 
+})
+
+tarefa.addEventListener('keypress', (tecla) => {
+    if (tecla.key == "Enter") {
+        idTarefa++
+        let listaItem = document.createElement("li");
+        listaItem.id = idTarefa;
+        listaItem.innerHTML = `${tarefa.value} <button onclick="removerLi(event)" name="${idTarefa}" id="remover"> Remover </button>`
+        lista.appendChild(listaItem);
+        if (tarefa.value == "") {
+            window.alert("Digite Algo!")
+        }
+
+        tarefa.value = ""
+    }
 })
 
 function removerLi(event) {
