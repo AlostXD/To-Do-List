@@ -107,3 +107,21 @@ main {
 hr {
     width: 200px;
 }
+
+@media screen and (max-width: 842px) {
+    main {
+        max-width: 842px;
+        margin: 0 auto;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    main {
+        max-width: 420px;
+        margin: 0 auto;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
