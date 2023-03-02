@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: linear-gradient(28deg, #000, grey);
+    background-repeat: no-repeat;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: grey;
+    padding: 120px 100px;
+    gap: 30px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.container2 {
+    position: absolute;
+    background-color: #000;
+    transform: rotate(-12deg);
+    height: 800px;
+    width: 800px;
+    z-index: -1;
+    border-radius: 12px;
+    opacity: 20%;
+}
+
+.container input {
+    all: unset;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+#input-tareta {
+    color: #fff;
+}
+
+.container input::placeholder {
+    color: #fff;
+    cursor: pointer;
+}
+
+#btnadd {
+    all: unset;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 16px;
+    border-radius: 500px;
+    transition: all 0.3s ease;
+}
+
+#btnadd:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.container h1 {
+    color: #fff;
+}
+
+#lista-tarefas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+}
+
+#remover {
+    all: unset;
+    border: 1px solid #fff;
+    padding: 8px 10px;
+    border-radius: 12px;
+    margin-left: 30px;
+    transition: all 0.3s ease;
+}
+
+#remover:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+}
+
+hr {
+    width: 200px;
+}
